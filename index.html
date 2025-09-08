@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Comunity Hub</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="navbar">
+               <h1>Calm World</h1>
+            <ul class="links">
+                <li>
+                    <a href="index.html" target="_self">Home</a>
+                </li>
+                <li>
+                    <a href="https://my.clevelandclinic.org/health/articles/autism-therapies" target="_self"> About
+                        Autism</a>
+                </li>
+                <li>
+                    <a href="https://my.clevelandclinic.org/health/articles/autism-therapies" target="_self">Therapy</a>
+                </li>
+                <li>
+                    <a href="contact.html" target="_self"><i class="fas fa-phone"></i></a>
+                    <!-- comment -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <div id="controls">
+        <button id="themeToggle"> switch theme</button>
+        <button id="calmMode">calm mode</button>
+        <button id="fontUp">🔼A+</button>
+        <button id="fontDown">A-</button>
+    </div>
+
+    <section class="world">
+        <h1>Welcome To Calm World</h1>
+        <p>A Sensory-Friendly And Interactive Learning Space For Autistic Children</p>
+    </section> 
+
+    <section class="video-section" aria-label="short video showing an autistic person">
+        <h2>Happy Moment</h2>
+        <div class="my-video">
+           <!-- <video controls loop preload="metadata" tabindex="0" poster="./april.jpg">
+                <source src="./AutismVideo.mp4" type="video/MP4">
+            </video>-->
+        </div>
+        <button id="skip-btn" aria-label="Skip video">Skip Video</button>
+    </section>
+    <p id="skip-message" style="display: none; text-align: center; font-size: 18px; color: #004a99;"></p>
+    <button id="replay-btn" style="display: none;">Replay video</button>
+    <script src="script.js"></script>
+    <div class="about-autism">
+        <div class="autism-card">
+            <h2>What Autism Is:</h2>
+            <p>Autism, also known as Autism Spectrum Disorder (ASD), is a developmental condition that influences
+                how individuals communicate, interact socially, and perceive the world around them. People with autism
+                may have unique strengths, different ways of learning, and distinctive perspectives.</p>
+        </div>
+        <div class="autism-card">
+            <h2>What Autism Is Not:</h2>
+            <p>Autism is not a disease, mental illness, or something that needs to be cured.
+                It does not mean a person lacks intelligence or potential. Rather, it represents a different way
+                of thinking and experiencing life.</p>
+
+        </div>
+
+    </div>
+    <section id="breathing">
+        <h2>Breathing Balloon Exercise</h2>
+        <div id="balloon"></div>
+        <p id="breathingInstruction"></p>
+        </div>
+        <audio id="backgroundMusic" loop>
+            <source src="./2019-04-20_-_Quiet_Time_-_David_Fesliyan.mp3" type="audio/mp3">
+        </audio>
+        <button id="startBreathing">Start Breathing</button>
+        <button id="stopBreathing">stop breathing</button>
+    </section>
+    <section id="emotion">
+        <h1>Emotion Explorer</h1>
+        <p>Select How You Feel We Will Help You Explore It.</p>
+        <div class="emotion" data-emotion="happy">😊</div>
+        <div class="emotion" data-emotion="sad">😢</div>
+        <div class="emotion" data-emotion="angry">😡</div>
+        <div class="emotion" data-emotion="surprised">😲</div>
+        <div id="emotion-display">
+            <h2 id="emotion-title">Your Emotions Will Appeare Here</h2>
+            <p id="emotion-discription"></p>
+        </div>
+    </section>
+    <section class="shapes-container">
+        <h2 id="matching">Shape Matching Game</h2>
+    <div id="shapes">
+        <!--shape to drag-->
+        <div id="shape-left">
+            <div class="shape circle" draggable="true" data-shape="circle"></div>
+            <div class="shape triangle" draggable="true" data-shape="triangle"></div>
+            <div class="shape square" draggable="true" data-shape="square"></div>
+            <div class="shape circle" draggable="true" data-shape="circle"></div>
+            <div class="shape triangle" draggable="true" data-shape="triangle"></div>
+            <div class="shape square" draggable="true" data-shape="square"></div>
+
+        </div>
+        <div id="shape-right">
+            <!--drop zone-->
+            <div class="drop-zone triangle" data-shape="triangle">Drop Triangle Here</div>
+            <div class="drop-zone circle" data-shape="circle">Drop Circle Here</div>
+            <div class="drop-zone square" data-shape="square">Drop Square Here</div>
+            <div class="drop-zone circle" data-shape="circle">Drop circle Here</div>
+            <div class="drop-zone triangle" data-shape="triangle">Drop triangle Here</div>
+            <div class="drop-zone square" data-shape="square">Drop Square Here</div>
+        </div>
+        </div>
+        <audio id="correctSound" src="./correct-6033.mp3"></audio>
+        <audio id="wrongSound" src="./nooooo you missed it.mp3"></audio>
+    </section>
+    <footer>&copy; CALM WORLD 2025 | All Right Reserved</footer>
+</body>
+
+</html>
